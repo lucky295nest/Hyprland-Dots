@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "bg0":    "#1a1816",
+    "bg1":    "#252220",
+    "bg2":    "#3e3b38",
+    "fg0":    "#d4c9b8",
+    "fg1":    "#a89f94",
+    "fg2":    "#6e6560",
+    "accent": "#c4b49a",
+    "ok":     "#7ab87a",
+    "err":    "#c87676",
+    "inf":    "#aaaaff"
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "p:fg2",
+          "template": "\u256d "
+        },
+        {
+          "type": "os",
+          "style": "plain",
+          "foreground": "p:fg1",
+          "template": "{{.Icon}} "
+        },
+        {
+          "type": "session",
+          "style": "plain",
+          "foreground": "p:fg0",
+          "template": "{{ .UserName }}@{{ .HostName }}"
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "p:fg2",
+          "template": " \u00b7 "
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "p:accent",
+          "template": "{{ .Path }}",
+          "properties": {
+            "style": "agnoster_short"
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "p:fg2",
+          "template": " \u00b7 {{ .HEAD }}",
+          "properties": {
+            "fetch_status": false
+          }
+        },
+        {
+          "type": "python",
+          "style": "plain",
+          "foreground": "p:fg2",
+          "template": " \u00b7 \ue235 ",
+          "properties": {
+            "display_mode": "environment"
+          }
+        },
+        {
+          "type": "exit",
+          "style": "plain",
+          "foreground": "p:ok",
+          "template": "{{ if eq .Code 0 }} \u00b7 \uf05d  {{ .Code }} \u00b7 {{ end }}",
+          "properties": {
+            "always_enabled": true
+          }
+        },
+        {
+          "type": "exit",
+          "style": "plain",
+          "foreground": "p:err",
+          "template": "{{ if eq .Code 1 }} \u00b7 \uf52f  {{ .Code }} \u00b7 {{ end }}",
+          "properties": {
+            "always_enabled": true
+          }
+        },
+        {
+          "type": "exit",
+          "style": "plain",
+          "foreground": "p:inf",
+          "template": "{{ if and (ne .Code 0) (ne .Code 1) }} \u00b7 \uf420  {{ .Code }} \u00b7 {{ end }}",
+          "properties": {
+            "always_enabled": true
+          }
+        },
+        {
+          "type": "executiontime",
+          "style": "plain",
+          "foreground": "p:fg2",
+          "template": "{{ .FormattedMs }}",
+          "properties": {
+            "threshold": 0,
+            "always_enabled": true,
+            "style": "austin"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "p:fg2",
+          "template": "\u2570\u2500 "
+        }
+      ]
+    }
+  ],
+  "final_space": true,
+  "version": 4
+}

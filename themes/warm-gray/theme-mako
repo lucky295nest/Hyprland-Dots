@@ -1,0 +1,15 @@
+background-color=#000000
+text-color=#d4c9b8
+border-color=#c4b49a
+progress-color=#7a8c6e
+
+[urgency=low]
+border-color=#3e3b38
+
+[urgency=normal]
+border-color=#c4b49a
+
+[urgency=high]
+border-color=#a06055
+background-color=#1a1816
+text-color=#d4c9b8

@@ -1,0 +1,57 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+window#waybar {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #d4c9b8;
+}
+/* ── Workspaces ─────────────────────────────────────────────── */
+#workspaces button {
+    padding: 0 10px;
+    color: #6e6560;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+#workspaces button:hover {
+    color: #d4c9b8;
+    background: rgba(255, 255, 255, 0.07);
+}
+#workspaces button.active {
+    color: #c4b49a;
+    border-bottom: 2px solid #c4b49a;
+}
+#workspaces button.urgent {
+    color: #a06055;
+    border-bottom: 2px solid #a06055;
+}
+/* ── Window title ────────────────────────────────────────────── */
+#window {
+    color: #a89f94;
+    font-style: italic;
+}
+/* ── Tray ────────────────────────────────────────────────────── */
+#tray {
+    padding: 0 8px;
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #a06055;
+    border-radius: 4px;
+}
+/* ── Audio ───────────────────────────────────────────────────── */
+#pulseaudio {
+    padding: 0 8px;
+    color: #d4c9b8;
+}
+/* ── Clock ───────────────────────────────────────────────────── */
+#clock {
+    padding: 0 12px;
+    color: #d4c9b8;
+}

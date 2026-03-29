@@ -26,8 +26,8 @@ window#waybar {
 
 /* ── Workspaces — peach ──────────────────────────────────────── */
 #workspaces {
-    background-color: rgba(224, 125, 90, 0.30);
-    border: 1px solid rgba(224, 125, 90, 0.55);
+    background-color: rgba(224, 125, 90, 0.43);
+    border: 1px solid rgba(224, 125, 90, 0.65);
     padding: 0 6px;
     margin: 5px 4px;
 }
@@ -47,41 +47,41 @@ window#waybar {
     border-bottom: 2px solid #FFF4EE;
 }
 #workspaces button.urgent {
-    color: #F2A7BB;
-    border-bottom: 2px solid #F2A7BB;
+    color: #FF8199;
+    border-bottom: 2px solid #FF8199;
 }
 
 /* ── Window title — pink ─────────────────────────────────────── */
 #window {
-    background-color: rgba(212, 112, 122, 0.28);
-    border: 1px solid rgba(212, 112, 122, 0.55);
+    background-color: rgba(212, 112, 122, 0.48);
+    border: 1px solid rgba(212, 112, 122, 0.65);
     color: #FFF4EE;
     font-style: italic;
 }
 
 /* ── Clock — peach ───────────────────────────────────────────── */
 #clock {
-    background-color: rgba(224, 125, 90, 0.28);
-    border: 1px solid rgba(224, 125, 90, 0.55);
+    background-color: rgba(224, 125, 90, 0.48);
+    border: 1px solid rgba(224, 125, 90, 0.65);
     color: #FFF4EE;
     font-weight: 500;
 }
 
 /* ── Audio — rose ────────────────────────────────────────────── */
 #pulseaudio {
-    background-color: rgba(242, 167, 187, 0.28);
-    border: 1px solid rgba(242, 167, 187, 0.55);
+    background-color: rgba(242, 167, 187, 0.48);
+    border: 1px solid rgba(242, 167, 187, 0.65);
     color: #FFF4EE;
 }
 #pulseaudio.muted {
     color: rgba(255, 244, 238, 0.50);
-    border-color: rgba(212, 112, 122, 0.55);
+    border-color: rgba(212, 112, 122, 0.65);
 }
 
 /* ── Tray — blush ────────────────────────────────────────────── */
 #tray {
-    background-color: rgba(245, 201, 168, 0.25);
-    border: 1px solid rgba(245, 201, 168, 0.55);
+    background-color: rgba(245, 201, 168, 0.35);
+    border: 1px solid rgba(245, 201, 168, 0.65);
     padding: 0 12px;
 }
 #tray > .passive {

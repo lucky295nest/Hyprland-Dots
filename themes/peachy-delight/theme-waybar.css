@@ -1,0 +1,95 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(255, 240, 235, 0.15);
+    border-bottom: 1px solid rgba(255, 220, 210, 0.20);
+    color: #FFF4EE;
+}
+
+/* ── Shared pill sizing ──────────────────────────────────────── */
+#workspaces,
+#window,
+#clock,
+#pulseaudio,
+#tray {
+    margin: 5px 4px;
+    padding: 2px 16px;
+    font-size: 14px;
+    border-radius: 999px;
+}
+
+/* ── Workspaces — peach ──────────────────────────────────────── */
+#workspaces {
+    background-color: rgba(224, 125, 90, 0.30);
+    border: 1px solid rgba(224, 125, 90, 0.55);
+    padding: 0 6px;
+    margin: 5px 4px;
+}
+#workspaces button {
+    padding: 0 8px;
+    color: rgba(255, 244, 238, 0.55);
+    background: transparent;
+    border-radius: 999px;
+    transition: all 0.2s ease;
+}
+#workspaces button:hover {
+    color: #FFF4EE;
+    background: rgba(224, 125, 90, 0.22);
+}
+#workspaces button.active {
+    color: #FFF4EE;
+    border-bottom: 2px solid #FFF4EE;
+}
+#workspaces button.urgent {
+    color: #F2A7BB;
+    border-bottom: 2px solid #F2A7BB;
+}
+
+/* ── Window title — pink ─────────────────────────────────────── */
+#window {
+    background-color: rgba(212, 112, 122, 0.28);
+    border: 1px solid rgba(212, 112, 122, 0.55);
+    color: #FFF4EE;
+    font-style: italic;
+}
+
+/* ── Clock — peach ───────────────────────────────────────────── */
+#clock {
+    background-color: rgba(224, 125, 90, 0.28);
+    border: 1px solid rgba(224, 125, 90, 0.55);
+    color: #FFF4EE;
+    font-weight: 500;
+}
+
+/* ── Audio — rose ────────────────────────────────────────────── */
+#pulseaudio {
+    background-color: rgba(242, 167, 187, 0.28);
+    border: 1px solid rgba(242, 167, 187, 0.55);
+    color: #FFF4EE;
+}
+#pulseaudio.muted {
+    color: rgba(255, 244, 238, 0.50);
+    border-color: rgba(212, 112, 122, 0.55);
+}
+
+/* ── Tray — blush ────────────────────────────────────────────── */
+#tray {
+    background-color: rgba(245, 201, 168, 0.25);
+    border: 1px solid rgba(245, 201, 168, 0.55);
+    padding: 0 12px;
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #D4707A;
+    border-radius: 999px;
+    padding: 0 6px;
+}

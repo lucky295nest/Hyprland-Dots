@@ -1,6 +1,6 @@
 #!/bin/bash
 
-THEME_DIR="$HOME/dotfiles/themes"
+THEME_DIR="$(cd "$(dirname "$0")" && pwd)"
 TARGET_DIR="$HOME/.config"
 
 if [ -z "$1" ]; then
@@ -19,8 +19,6 @@ fi
 echo "switching to theme: $1"
 notify-send "Theme switcher" "Theme switched to: $1"
 
-# --- symlink ---
-
 # Kitty
 ln -sf "$THEME_PATH/theme-kitty.conf" "$TARGET_DIR/kitty/theme.conf"
 
@@ -30,6 +28,7 @@ hyprctl reload
 
 # Waybar
 ln -sf "$THEME_PATH/theme-waybar.css" "$TARGET_DIR/waybar/theme.css"
+ln -sf "$THEME_PATH/theme-waybar.jsonc" "$TARGET_DIR/waybar/config.jsonc"
 killall -SIGUSR2 waybar
 
 # Mako

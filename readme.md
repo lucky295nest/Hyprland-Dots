@@ -1,7 +1,7 @@
-# luky's dots
+# Lukysek's dots
 ### my Hyprland dotfiles
 
-My Hyprland configuration — meant as a backup, but feel free to use it however you like!  
+My Hyprland configuration — meant as a backup, but feel free to use it however you like!\
 I'll be adding themes and scripts over time, so pick whatever suits you!
 
 #### Requirements
@@ -31,10 +31,10 @@ ttf-iosevkaterm-nerd
 ttf-iosevka-nerd
 nwg-look
 Graphite-gtk-theme
+bibata-cursor-theme
 ```
-> If you discover that any dependencies are missing please let me know <3
 
-| Thingie    | What is it           |
+| Thingie    | What it is           |
 |------------|----------------------|
 | hyprland   | window manager       |
 | rofi       | application launcher |
@@ -48,16 +48,74 @@ Graphite-gtk-theme
 | zsh        | shell                |
 | nerdfonts  | very cool fonts      |
 
+> If you discover that any dependencies are missing please let me know <3
+
+## Instructions
+
+### ❗ Important ❗
+#### before using this config
+set up your monitors.conf to fit your monitor \
+or uncomment this line: `# monitor= , preffered, auto, 1` \
+and delete or comment this line: `monitor=DP-3,2560x1440@165,0x0, 1`
+
+###### STEP 1
+Clone into your home folder (or wherever you want <3)
+
+```shell
+cd ~
+git clone --depth=1 --branch main https://github.com/lucky295nest/Hyprland-dots.git
+```
+
+###### STEP 2
+
+Either copy or symlink everything to your `.config` folder.\
+I recommend to symlink so :
+
+```shell
+cd ~/dotfiles
+# Make sure to create a backup and remove the folders if they already exist
+# like .config/hypr/ since we will be symlinking it from ~/dotfiles 
+ln -sf ./hypr ~/.config/hypr
+ln -sf ./kitty ~/.config/kitty
+ln -sf ./mako ~/.config/mako
+ln -sf ./oh-my-posh ~/.config/oh-my-posh
+ln -sf ./rofi ~/.config/rofi
+ln -sf ./waybar ~/.config/waybar
+```
+
+###### STEP 3
+
+Set a wallpaper by using `awww img ./path/to/wallpaper.filetype`.\
+for more info check [awww](https://codeberg.org/LGFae/awww)
+
+to switch themes use `theme-switcher.sh theme-name` \
+located in `~/dotfiles/themes/theme-switcher.sh`
+
 ## Themes
 
-##### warm gray
+<details>
+<summary><h5>warm gray</h5></summary>
+<br>
 
 ![warm gray](./screenshots/warm-gray.png)
+
 ![warm gray rofi](./screenshots/warm-gray-rofi.png)
 
 wallpaper link [here](https://wallpapercave.com/w/wp13908816)
+</details>
+
+<details>
+<summary><h5>peachy delight</h5></summary>
+<br>
+
+![peachy delight](./screenshots/peachy-delight-gray.png)
+
+![peachy delight rofi](./screenshots/peachy-delight-rofi.png)
+
+wallpaper link [here](https://www.uhdpaper.com/2026/02/nikke-x-stellar-blade-4k-2625m.html)
+</details>
 
 ---
 
-Rofi theme based on [rofi-themes-selection](https://github.com/newmanls/rofi-themes-collection) by [newmanls](https://github.com/newmanls) — modified by lucky295nest.
+Rofi theme based on [rofi-themes-selection](https://github.com/newmanls/rofi-themes-collection) by [newmanls](https://github.com/newmanls) — modified by lucky295nest.\
 Released under GPL-3.0, see LICENSE.

@@ -108,7 +108,7 @@ wallpaper link [here](https://wallpapercave.com/w/wp13908816)
 <summary><h5>peachy delight</h5></summary>
 <br>
 
-![peachy delight](./screenshots/peachy-delight-gray.png)
+![peachy delight](./screenshots/peachy-delight.png)
 
 ![peachy delight rofi](./screenshots/peachy-delight-rofi.png)
 

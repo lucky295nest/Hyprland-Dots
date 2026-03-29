@@ -55,7 +55,7 @@ bibata-cursor-theme
 ### ❗ Important ❗
 #### before using this config
 set up your monitors.conf to fit your monitor \
-or uncomment this line: `# monitor= , preffered, auto, 1` \
+or uncomment this line: `# monitor= , preferred, auto, 1` \
 and delete or comment this line: `monitor=DP-3,2560x1440@165,0x0, 1`
 
 ###### STEP 1
@@ -63,13 +63,13 @@ Clone into your home folder (or wherever you want <3)
 
 ```shell
 cd ~
-git clone --depth=1 --branch main https://github.com/lucky295nest/Hyprland-dots.git
+git clone --depth=1 --branch main https://github.com/lucky295nest/Hyprland-dots.git dotfiles
 ```
 
 ###### STEP 2
 
-Either copy or symlink everything to your `.config` folder.\
-I recommend to symlink so :
+Either copy or symlink everything to your `.config` folder. \
+I recommend to symlink (so if you copy you're on your own :3).
 
 ```shell
 cd ~/dotfiles
@@ -85,16 +85,31 @@ ln -sf ./waybar ~/.config/waybar
 
 ###### STEP 3
 
-Set a wallpaper by using `awww img ./path/to/wallpaper.filetype`.\
-for more info check [awww](https://codeberg.org/LGFae/awww)
+Give the scripts proper rights.
 
-to switch themes use `theme-switcher.sh theme-name` \
-located in `~/dotfiles/themes/theme-switcher.sh`
+```shell
+chmod +x ~/dotfiles/awww-set.sh
+chmod +x ~/dotfiles/wallpaper-picker.sh
+chmod +x ~/dotfiles/theme-switcher.sh
+chmod +x ~/dotfiles/theme-picker.sh
+```
+
+you should probably run "~/dotfiles/theme-switcher.sh warm-gray" or whatever theme you'd want \
+because the symlinks are not present by default and your setup will show up broken.
+
+###### STEP 4
+
+To setup a wallpaper you can put your wallpapers inside `~/dotfiles/wallpapers/theme-name/` \
+> I didn't want to include the wallpapers on github since I don't know if it is safe to do so.
+
+Then you can simply use `SUPER + W` and choose it
+
+To switch themes use `SUPER + T`
 
 ## Themes
 
 <details>
-<summary><h5>warm gray</h5></summary>
+<summary><b>warm gray</b></summary>
 <br>
 
 ![warm gray](./screenshots/warm-gray.png)
@@ -102,10 +117,11 @@ located in `~/dotfiles/themes/theme-switcher.sh`
 ![warm gray rofi](./screenshots/warm-gray-rofi.png)
 
 wallpaper link [here](https://wallpapercave.com/w/wp13908816)
+
 </details>
 
 <details>
-<summary><h5>peachy delight</h5></summary>
+<summary><b>peachy delight</b></summary>
 <br>
 
 ![peachy delight](./screenshots/peachy-delight.png)
@@ -113,6 +129,7 @@ wallpaper link [here](https://wallpapercave.com/w/wp13908816)
 ![peachy delight rofi](./screenshots/peachy-delight-rofi.png)
 
 wallpaper link [here](https://www.uhdpaper.com/2026/02/nikke-x-stellar-blade-4k-2625m.html)
+
 </details>
 
 ---

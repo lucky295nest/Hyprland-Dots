@@ -99,7 +99,7 @@ because the symlinks are not present by default and your setup will show up brok
 
 ###### STEP 4
 
-To setup a wallpaper create a wallpapers directory `~/dotfiles/wallpapers/` \
+To setup a wallpaper create a wallpapers directory (if it doesn't exist yet) `~/dotfiles/wallpapers/` \
 then you can put your wallpapers inside `~/dotfiles/wallpapers/theme-name/`.
 
 > I didn't want to include the wallpapers on github since I don't know if it is safe to do so.

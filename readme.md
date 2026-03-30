@@ -72,9 +72,9 @@ Either copy or symlink everything to your `.config` folder. \
 I recommend to symlink (so if you copy you're on your own :3).
 
 ```shell
-cd ~/dotfiles
 # Make sure to create a backup and remove the folders if they already exist
 # like .config/hypr/ since we will be symlinking it from ~/dotfiles 
+cd ~/dotfiles
 ln -sf ./hypr ~/.config/hypr
 ln -sf ./kitty ~/.config/kitty
 ln -sf ./mako ~/.config/mako
@@ -94,12 +94,13 @@ chmod +x ~/dotfiles/theme-switcher.sh
 chmod +x ~/dotfiles/theme-picker.sh
 ```
 
-you should probably run "~/dotfiles/theme-switcher.sh warm-gray" or whatever theme you'd want \
+You should probably run `~/dotfiles/theme-switcher.sh warm-gray` or whatever theme you'd want \
 because the symlinks are not present by default and your setup will show up broken.
 
 ###### STEP 4
 
-To setup a wallpaper you can put your wallpapers inside `~/dotfiles/wallpapers/theme-name/`
+To setup a wallpaper create a wallpapers directory `~/dotfiles/wallpapers/` \
+then you can put your wallpapers inside `~/dotfiles/wallpapers/theme-name/`.
 
 > I didn't want to include the wallpapers on github since I don't know if it is safe to do so.
 

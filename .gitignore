@@ -5,3 +5,10 @@ oh-my-posh/config.json
 rofi/theme.rasi
 waybar/config.jsonc
 waybar/theme.css
+
+# wallpapers
+wallpapers/peachy-delight/*
+!wallpapers/peachy-delight/.gitkeep
+
+wallpapers/warm-gray/*
+!wallpapers/warm-gray/.gitkeep

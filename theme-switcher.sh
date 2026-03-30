@@ -21,27 +21,27 @@ echo "$1" > $TARGET_DIR/current-theme
 notify-send "Theme switcher" "Theme switched to: $1"
 
 # Kitty
-ln -sf "$THEME_PATH/theme-kitty.conf" "$TARGET_DIR/kitty/theme.conf"
+ln -sf "$THEME_PATH/kitty/theme.conf" "$TARGET_DIR/kitty/theme.conf"
 killall -SIGUSR1 kitty 2>/dev/null || true
 
 # Hyprland
-ln -sf "$THEME_PATH/theme-hyprland.conf" "$TARGET_DIR/hypr/theme.conf"
+ln -sf "$THEME_PATH/hyprland/theme.conf" "$TARGET_DIR/hypr/theme.conf"
 hyprctl reload
 
 # Waybar
-ln -sf "$THEME_PATH/theme-waybar.css" "$TARGET_DIR/waybar/theme.css"
-ln -sf "$THEME_PATH/theme-waybar.jsonc" "$TARGET_DIR/waybar/config.jsonc"
+ln -sf "$THEME_PATH/waybar/style.css" "$TARGET_DIR/waybar/theme.css"
+ln -sf "$THEME_PATH/waybar/config.jsonc" "$TARGET_DIR/waybar/config.jsonc"
 killall -SIGUSR2 waybar 2>/dev/null || true
 
 # Mako
-ln -sf "$THEME_PATH/theme-mako" "$TARGET_DIR/mako/theme.conf"
+ln -sf "$THEME_PATH/mako/theme.conf" "$TARGET_DIR/mako/theme.conf"
 makoctl reload 2>/dev/null || true
 
 # Rofi
-ln -sf "$THEME_PATH/theme-rofi.rasi" "$TARGET_DIR/rofi/theme.rasi"
+ln -sf "$THEME_PATH/rofi/theme.rasi" "$TARGET_DIR/rofi/theme.rasi"
 
 # Oh my posh
-ln -sf "$THEME_PATH/theme-omp.json" "$TARGET_DIR/oh-my-posh/config.json"
+ln -sf "$THEME_PATH/oh-my-posh/config.json" "$TARGET_DIR/oh-my-posh/config.json"
 
 # Random wallpaper from theme
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"

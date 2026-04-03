@@ -1,5 +1,4 @@
 #!/bin/bash
-THEME_DIR="$(cd "$(dirname "$0")" && pwd)"
 CURRENT_THEME=$(cat "$HOME/.config/current-theme" 2>/dev/null)
 
 if [ -z "$CURRENT_THEME" ]; then
@@ -7,7 +6,7 @@ if [ -z "$CURRENT_THEME" ]; then
   exit 1
 fi
 
-WALLPAPER_DIR="$THEME_DIR/wallpapers/$CURRENT_THEME"
+WALLPAPER_DIR=".config/lucky-wallpapers/$CURRENT_THEME"
 
 if [ ! -d "$WALLPAPER_DIR" ] || [ -z "$(ls -A "$WALLPAPER_DIR" 2>/dev/null)" ]; then
   notify-send "Wallpaper Picker" "No wallpapers found for theme: $CURRENT_THEME"

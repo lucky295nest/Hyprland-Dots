@@ -1,6 +1,6 @@
 #!/bin/bash
 
-THEME_DIR="$(cd "$(dirname "$0")/themes" && pwd)"
+THEME_DIR="$HOME/.config/lucky-themes"
 TARGET_DIR="$HOME/.config"
 
 if [ -z "$1" ]; then
@@ -30,7 +30,7 @@ hyprctl reload
 
 # Waybar
 ln -sf "$THEME_PATH/waybar/style.css" "$TARGET_DIR/waybar/theme.css"
-ln -sf "$THEME_PATH/waybar/config.jsonc" "$TARGET_DIR/waybar/config.jsonc"
+ln -sf "$THEME_PATH/waybar/layout.json" "$TARGET_DIR/waybar/layout.json"
 killall -SIGUSR2 waybar 2>/dev/null || true
 
 # Mako
@@ -44,8 +44,8 @@ ln -sf "$THEME_PATH/rofi/theme.rasi" "$TARGET_DIR/rofi/theme.rasi"
 ln -sf "$THEME_PATH/oh-my-posh/config.json" "$TARGET_DIR/oh-my-posh/config.json"
 
 # Random wallpaper from theme
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-WALLPAPER_DIR="$HOME/dotfiles/wallpapers/$1"
+SCRIPT_DIR="$HOME/.config/lucky-scripts"
+WALLPAPER_DIR="$HOME/.config/lucky-wallpapers/$1"
 if [ -d "$WALLPAPER_DIR" ] && [ -n "$(ls -A "$WALLPAPER_DIR" 2>/dev/null)" ]; then
   WALLPAPER=$(ls "$WALLPAPER_DIR"/*.{jpg,jpeg,png} 2>/dev/null | shuf -n1)
   if [ -n "$WALLPAPER" ]; then

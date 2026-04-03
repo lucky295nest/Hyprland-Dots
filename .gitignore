@@ -3,7 +3,7 @@ kitty/theme.conf
 mako/theme.conf
 oh-my-posh/config.json
 rofi/theme.rasi
-waybar/config.jsonc
+waybar/layout.json
 waybar/theme.css
 
 # wallpapers

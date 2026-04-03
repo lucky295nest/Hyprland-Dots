@@ -74,13 +74,15 @@ I recommend to symlink (so if you copy you're on your own :3).
 ```shell
 # Make sure to create a backup and remove the folders if they already exist
 # like .config/hypr/ since we will be symlinking it from ~/dotfiles 
-cd ~/dotfiles
-ln -sf ./hypr ~/.config/hypr
-ln -sf ./kitty ~/.config/kitty
-ln -sf ./mako ~/.config/mako
-ln -sf ./oh-my-posh ~/.config/oh-my-posh
-ln -sf ./rofi ~/.config/rofi
-ln -sf ./waybar ~/.config/waybar
+ln -sf ~/dotfiles/themes/ ~/.config/lucky-themes
+ln -sf ~/dotfiles/wallpapers/ ~/.config/lucky-wallpapers
+ln -sf ~/dotfiles/lucky-scripts ~/.config/lucky-scripts
+ln -sf ~/dotfiles/hypr ~/.config/hypr
+ln -sf ~/dotfiles/kitty ~/.config/kitty
+ln -sf ~/dotfiles/mako ~/.config/mako
+ln -sf ~/dotfiles/oh-my-posh ~/.config/oh-my-posh
+ln -sf ~/dotfiles/rofi ~/.config/rofi
+ln -sf ~/dotfiles/waybar ~/.config/waybar
 ```
 
 ###### STEP 3

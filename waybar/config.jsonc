@@ -1,0 +1,24 @@
+{
+    "include": [
+        "~/.config/waybar/layout.json",
+        "~/.config/waybar/modules/tray.json",
+        "~/.config/waybar/modules/clock.json",
+        "~/.config/waybar/modules/pulseaudio.json",
+        "~/.config/waybar/modules/workspaces.json",
+        "~/.config/waybar/modules/window.json"
+    ],
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "hyprland/window"
+    ],
+
+    "modules-right": [
+        "tray",
+        "pulseaudio",
+        "clock"
+    ]
+}

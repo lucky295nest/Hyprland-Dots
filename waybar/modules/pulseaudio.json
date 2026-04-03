@@ -1,0 +1,10 @@
+{
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "on-click": "pavucontrol",
+    "format-muted": "\ueee8 muted",
+    "format-icons": {
+      "default": ["\uf027", "\uf028"],
+    }
+  }
+}

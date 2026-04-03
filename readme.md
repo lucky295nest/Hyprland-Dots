@@ -71,9 +71,10 @@ git clone --depth=1 --branch main https://github.com/lucky295nest/Hyprland-dots.
 Either copy or symlink everything to your `.config` folder. \
 I recommend to symlink (so if you copy you're on your own :3).
 
+
+> Make sure to create a backup and remove the folders if they already exist
+> like .config/hypr/ since we will be symlinking it from ~/dotfiles 
 ```shell
-# Make sure to create a backup and remove the folders if they already exist
-# like .config/hypr/ since we will be symlinking it from ~/dotfiles 
 ln -sf ~/dotfiles/themes/ ~/.config/lucky-themes
 ln -sf ~/dotfiles/wallpapers/ ~/.config/lucky-wallpapers
 ln -sf ~/dotfiles/lucky-scripts ~/.config/lucky-scripts
@@ -90,19 +91,18 @@ ln -sf ~/dotfiles/waybar ~/.config/waybar
 Give the scripts proper rights.
 
 ```shell
-chmod +x ~/dotfiles/awww-set.sh
-chmod +x ~/dotfiles/wallpaper-picker.sh
-chmod +x ~/dotfiles/theme-switcher.sh
-chmod +x ~/dotfiles/theme-picker.sh
+chmod +x ~/.config/lucky-scripts/awww-set.sh
+chmod +x ~/.config/lucky-scripts/wallpaper-picker.sh
+chmod +x ~/.config/lucky-scripts/theme-switcher.sh
+chmod +x ~/.config/lucky-scripts/theme-picker.sh
 ```
 
-You should probably run `~/dotfiles/theme-switcher.sh warm-gray` or whatever theme you'd want \
-because the symlinks are not present by default and your setup will show up broken.
+You should probably run `~/.config/lucky-scripts/theme-switcher.sh warm-gray` or whatever theme you'd want \
+because the symlinks are not present by default and your setup might show up broken.
 
 ###### STEP 4
 
-To setup a wallpaper create a wallpapers directory (if it doesn't exist yet) `~/dotfiles/wallpapers/` \
-then you can put your wallpapers inside `~/dotfiles/wallpapers/theme-name/`.
+To setup a wallpaper you can put your own wallpapers into `~/.config/lucky-wallpapers/theme-name`
 
 > I didn't want to include the wallpapers on github since I don't know if it is safe to do so.
 

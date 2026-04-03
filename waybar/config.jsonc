@@ -5,7 +5,8 @@
         "~/.config/waybar/modules/clock.json",
         "~/.config/waybar/modules/pulseaudio.json",
         "~/.config/waybar/modules/workspaces.json",
-        "~/.config/waybar/modules/window.json"
+        "~/.config/waybar/modules/window.json",
+        "~/.config/waybar/modules/network.json"
     ],
 
     "modules-left": [
@@ -18,6 +19,7 @@
 
     "modules-right": [
         "tray",
+        "network",
         "pulseaudio",
         "clock"
     ]

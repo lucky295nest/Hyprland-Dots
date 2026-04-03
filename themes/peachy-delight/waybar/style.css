@@ -17,6 +17,7 @@ window#waybar {
 #window,
 #clock,
 #pulseaudio,
+#network,
 #tray {
     margin: 5px 4px;
     padding: 2px 16px;
@@ -76,6 +77,17 @@ window#waybar {
 #pulseaudio.muted {
     color: rgba(255, 244, 238, 0.50);
     border-color: rgba(212, 112, 122, 0.65);
+}
+
+/* ── Network — turquoise ─────────────────────────────────────── */
+#network {
+    background-color: rgba(64, 224, 208, 0.48);
+    border: 1px solid rgba(64, 224, 208, 0.65);
+    color: #FFF4EE;
+}
+#network.disconnected {
+    color: rgba(255, 244, 238, 0.50);
+    border-color: rgba(32, 187, 208, 0.65);
 }
 
 /* ── Tray — blush ────────────────────────────────────────────── */

@@ -1,0 +1,8 @@
+{
+  "network": {
+    "tooltip": false,
+    "format-wifi": "\uf1eb  {essid}",
+    "format-ethernet": "\udb80\ude00  connected",
+    "format-disconnected": "\udb81\uddaa  disconnected"
+  }
+}

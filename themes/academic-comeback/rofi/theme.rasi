@@ -1,6 +1,6 @@
 * {
     font:   "JetBrainsMono Nerd Font 12";
-    bg0:             #231C14CC;
+    bg0:             #231C14AA;
     bg1:             #2E2418;
     fg0:             #E8DFC8;
     accent-color:    #C8961E;
@@ -16,7 +16,7 @@ window {
     location:   center;
     width:      480;
     background-color:   @bg0;
-    border-radius:      12px;
+    border-radius:      0px;
     border:             2px;
     border-color:       @accent-color;
 }

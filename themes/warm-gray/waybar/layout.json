@@ -3,4 +3,19 @@
     "position": "top",
     "height": 36,
     "spacing": 4,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "hyprland/window"
+    ],
+
+    "modules-right": [
+        "tray",
+        "network",
+        "pulseaudio",
+        "clock"
+    ]
 }

@@ -12,3 +12,6 @@ wallpapers/peachy-delight/*
 
 wallpapers/warm-gray/*
 !wallpapers/warm-gray/.gitkeep
+
+wallpapers/academic-comeback/*
+!wallpapers/academic-comeback/.gitkeep

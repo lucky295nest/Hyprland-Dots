@@ -136,6 +136,18 @@ wallpaper link [here](https://www.uhdpaper.com/2026/02/nikke-x-stellar-blade-4k-
 
 </details>
 
+<details>
+<summary><b>academic comeback</b></summary>
+<br>
+
+![academic comeback](./screenshots/academic-comeback.png)
+
+![academic comeback rofi](./screenshots/academic-comeback-rofi.png)
+
+wallpaper link [here](https://unsplash.com/photos/building-interior-vTKLujPJecw)
+
+</details>
+
 ---
 
 Rofi theme based on [rofi-themes-selection](https://github.com/newmanls/rofi-themes-collection) by [newmanls](https://github.com/newmanls) — modified by lucky295nest.\

@@ -1,0 +1,90 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+window#waybar {
+    background-color: rgba(26, 21, 16, 0.75);
+    border-bottom: none;
+    border-top: 2px solid rgba(52, 86, 120, 0.55);
+    color: #C4B896;
+}
+/* ── Shared module sizing ────────────────────────────────────── */
+#workspaces,
+#window,
+#clock,
+#pulseaudio,
+#network,
+#tray {
+    margin: 0;
+    padding: 0 16px;
+    font-size: 13px;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    color: #C4B896;
+}
+/* ── Workspaces ──────────────────────────────────────────────── */
+#workspaces {
+    padding: 0;
+    background-color: transparent;
+}
+#workspaces button {
+    padding: 0 12px;
+    min-height: 30px;
+    color: rgba(196, 184, 150, 0.35);
+    background: transparent;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+#workspaces button:hover {
+    color: #C4B896;
+    background: rgba(200, 150, 30, 0.08);
+}
+#workspaces button.active {
+    color: #E8DFC8;
+    border-bottom: 2px solid rgba(200, 150, 30, 0.60);
+}
+#workspaces button.urgent {
+    color: #D45A44;
+    border-bottom: 2px solid #D45A44;
+}
+/* ── Window title ────────────────────────────────────────────── */
+#window {
+    color: rgba(196, 184, 150, 0.55);
+    font-style: italic;
+}
+/* ── Clock ───────────────────────────────────────────────────── */
+#clock {
+    color: #E8DFC8;
+    font-weight: 500;
+}
+/* ── Audio ───────────────────────────────────────────────────── */
+#pulseaudio {
+    color: #C4B896;
+}
+#pulseaudio.muted {
+    color: rgba(196, 184, 150, 0.30);
+}
+/* ── Network ─────────────────────────────────────────────────── */
+#network {
+    color: #C4B896;
+}
+#network.disconnected {
+    color: rgba(196, 184, 150, 0.30);
+}
+/* ── Tray ────────────────────────────────────────────────────── */
+#tray {
+    padding: 0 10px;
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #D45A44;
+    padding: 0 6px;
+}

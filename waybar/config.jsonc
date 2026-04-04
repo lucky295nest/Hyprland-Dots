@@ -8,19 +8,4 @@
         "~/.config/waybar/modules/window.json",
         "~/.config/waybar/modules/network.json"
     ],
-
-    "modules-left": [
-        "hyprland/workspaces"
-    ],
-
-    "modules-center": [
-        "hyprland/window"
-    ],
-
-    "modules-right": [
-        "tray",
-        "network",
-        "pulseaudio",
-        "clock"
-    ]
 }

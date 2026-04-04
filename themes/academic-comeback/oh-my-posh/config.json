@@ -65,7 +65,8 @@
           "foreground": "p:ok",
           "foreground_templates": [
             "{{ if gt .Code 1 }}p:inf{{ end }}",
-            "{{ if eq .Code 1 }}p:err{{ end }}"
+            "{{ if eq .Code 1 }}p:err{{ end }}",
+            "{{ if lt .Code 0 }}p:inf{{ end }}"
           ],
           "template": "╰ {{ if eq .Code 0 }}❯{{ else }}{{ .Code }}{{ end }} ",
           "properties": {

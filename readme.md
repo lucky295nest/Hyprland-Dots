@@ -54,9 +54,11 @@ bibata-cursor-theme
 
 ### ❗ Important ❗
 #### before using this config
-set up your monitors.conf to fit your monitor \
+set up your `monitors.conf` to fit your monitor \
 or uncomment this line: `# monitor= , preferred, auto, 1` \
-and delete or comment this line: `monitor=DP-3,2560x1440@165,0x0, 1`
+and delete my configuration
+
+do the same for `windows-workspaces`
 
 ###### STEP 1
 Clone into your home folder (or wherever you want <3)
